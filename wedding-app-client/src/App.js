@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react'
+import axios from 'axios'
+import Header from './components/Header.js'
+import Navbar from './components/Navbar.js'
+import Footer from './components/Footer.js'
+import Main from './components/Main.js'
+import 'react-bulma-components/dist/react-bulma-components.min.css'
 import './App.css';
+import './main.scss'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Colleen and Blake Wedding Page
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="mainwrap">
+      <Navbar />
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default App
